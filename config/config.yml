@@ -1,0 +1,13 @@
+baseAdmin:
+  email: "base@admin.com"
+  username: "admin"
+  password: "admin"
+
+logger:
+  serviceName: "Users"
+
+server:
+  address: "0.0.0.0:8888"
+
+system:
+  defaultLocale: "en"
