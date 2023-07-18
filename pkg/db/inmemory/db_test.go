@@ -9,7 +9,6 @@ import (
 )
 
 func TestGetUserByUsername(t *testing.T) {
-
 	db := inmemory.NewInMemoryDatabase()
 
 	testUser := inmemory.User{
@@ -36,7 +35,6 @@ func TestGetUserByUsername(t *testing.T) {
 func TestInsertUser(t *testing.T) {
 	db := inmemory.NewInMemoryDatabase()
 
-	// Test InsertUser
 	testUser := inmemory.User{
 		Username: "testuser",
 		Email:    "testuser@example.com",
@@ -55,10 +53,8 @@ func TestInsertUser(t *testing.T) {
 }
 
 func TestGetUserById(t *testing.T) {
-	// Create a new instance of InMemoryDatabase for testing
 	db := inmemory.NewInMemoryDatabase()
 
-	// Insert a test user
 	testUser := inmemory.User{
 		Username: "testuser",
 		Email:    "testuser@example.com",
@@ -82,7 +78,6 @@ func TestGetUserById(t *testing.T) {
 func TestGetUsers(t *testing.T) {
 	db := inmemory.NewInMemoryDatabase()
 
-	// Insert test users
 	testUsers := []inmemory.User{
 		{
 			Username: "user1",
